@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Site Especial para Laine</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom right, #c4e1f2, #8599a6);
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 100%;
+        margin: 50px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+      }
+
+      h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #8c6c5a;
+        display: flex;
+        align-items: center;
+      }
+
+      p {
+        margin-bottom: 10px;
+        color: #0d0d0d;
+      }
+
+      .button-container {
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ffc0cb;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 3px;
+        margin: 0 10px;
+        transition: background-color 0.3s ease;
+        position: relative;
+        border: 2px solid black;
+        overflow: hidden;
+      }
+
+      .button::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        transform: scale(0);
+        opacity: 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+      }
+
+      .button:hover::before {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      .button:hover {
+        background-color: #ffb6c1;
+      }
+
+      .gif-container {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          margin: 20px;
+        }
+
+        .gif-container {
+          position: relative;
+          top: initial;
+          right: initial;
+          transform: none;
+          margin-top: 20px;
+          text-align: center;
+        }
+      }
+
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+
+        .button {
+          padding: 8px 16px;
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <span>Oi, Laine!</span
+        ><img
+          src="https://static.wikia.nocookie.net/f3315ee8-1ae3-4dec-a77d-dcfeba13d875/scale-to-width/755"
+          alt="Gif"
+          width="100"
+          height="100"
+        />
+      </h1>
+      <p>
+        Sou eu, o Silvio, seu cunhado. Quero te enviar algumas palavras para te
+        animar e te ajudar a lidar com a ansiedade. Tenho certeza de que você é
+        uma pessoa incrível, cheia de potencial, e estou aqui para te apoiar em
+        tudo o que precisar.
+      </p>
+
+      <p>
+        Laine, você prometeu que vai fazer o que eu pedi, e eu confio em você.
+        Acredito que você tem dentro de si uma força enorme para enfrentar essa
+        ansiedade de frente. Eu sei que às vezes pode ser difícil, mas você não
+        está sozinha nessa jornada. Vamos superar tudo juntos!
+      </p>
+
+      <p>
+        Laine, você é uma pessoa incrível e eu estou animado para ver todo o
+        progresso que você vai fazer. Lembre-se de que estou aqui para te apoiar
+        em cada passo do caminho.
+      </p>
+      <div class="button-container">
+        <a class="button" href="fr.html">Ver Dicas</a>
+        <a class="button" href="vd.html">Assistir aos Vídeos</a>
+      </div>
+    </div>
+  </body>
+</html>

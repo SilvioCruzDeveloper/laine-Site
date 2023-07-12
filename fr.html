@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Frases de Motivação para Laine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F2F2F2;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 100%;
+      margin: 20px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #8C6C5A;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    .quote {
+      background-color: #FFDAB9;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .quote:hover {
+      transform: translateY(-5px);
+    }
+    
+    .quote p {
+      margin: 0;
+      color: #0D0D0D;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    
+    .quote:nth-child(odd) {
+      background-color: #FFB6C1;
+    }
+    
+    .quote:nth-child(even) {
+      background-color: #ADD8E6;
+    }
+    
+    .quote:last-child {
+      margin-bottom: 0;
+    }
+    
+    .quote:before {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 4px;
+      background-color: #8C6C5A;
+      margin: 0 auto 10px;
+      border-radius: 2px;
+    }
+    
+    .quote:after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 2px;
+      background-color: #8C6C5A;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+    
+    .quote:hover:before,
+    .quote:hover:after {
+      background-color: #FFC0CB;
+    }
+    
+    .quote p:first-child {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .quote.active {
+      animation: highlight 0.5s ease infinite alternate;
+    }
+    
+    @keyframes highlight {
+      0% {
+        background-color: #FFDAB9;
+        transform: scale(1);
+      }
+      100% {
+        background-color: #FFC0CB;
+        transform: scale(1.05);
+      }
+    }
+    
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+      
+      .quote {
+        padding: 15px;
+      }
+      
+      .quote p {
+        font-size: 14px;
+      }
+      
+      .quote:before {
+        width: 30px;
+        height: 3px;
+        margin-bottom: 8px;
+      }
+      
+      .quote:after {
+        width: 60px;
+        height: 1px;
+        margin: 8px auto 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Frases de Motivação para Laine</h1>
+    <div class="quote" onclick="toggleHighlight(this)">
+      <p>Laine, acredite no seu potencial, pois você é capaz de superar qualquer desafio que surgir em seu caminho!</p>
+    </div>
+    <div class="quote" onclick="toggleHighlight(this)">
+      <p>Lembre-se de que cada pequena conquista é um passo importante em direção ao controle da ansiedade. Celebre cada vitória!</p>
+    </div>
+    <div class="quote" onclick="toggleHighlight(this)">
+      <p>Não deixe a ansiedade definir quem você é. Você é muito mais do que isso. Você é uma pessoa corajosa e resiliente.</p>
+    </div>
+    <div class="quote" onclick="toggleHighlight(this)">
+      <p>Quando as coisas ficarem difíceis, lembre-se de respirar fundo e confiar na sua capacidade de enfrentar os desafios com coragem e determinação.</p>
+    </div>
+    <div class="quote" onclick="toggleHighlight(this)">
+      <p>Acredite na sua força interior. Você é mais forte do que imagina e capaz de enfrentar qualquer tempestade.</p>
+    </div>
+    <div class="quote" onclick="toggleHighlight(this)">
+      <p>Laine, permita-se ser gentil consigo mesma. Cuide de sua mente e de seu corpo, e lembre-se de que é importante dar tempo para si mesma.</p>
+    </div>
+    <div class="quote" onclick="toggleHighlight(this)">
+      <p>Nunca subestime o poder de um sorriso. Um simples gesto pode trazer alegria e ajudar a aliviar a ansiedade.</p>
+    </div>
+    <div class="quote" onclick="toggleHighlight(this)">
+      <p>Mantenha-se positiva e rodeie-se de pessoas que te apoiam e te inspiram a ser a melhor versão de si mesma.</p>
+    </div>
+    <div class="quote" onclick="toggleHighlight(this)">
+      <p>Laine, o progresso pode ser gradual, mas lembre-se de que cada passo em direção ao controle emocional é um avanço na direção certa.</p>
+    </div>
+    <div class="quote" onclick="toggleHighlight(this)">
+      <p>Você é uma jovem incrível, cheia de sonhos e potencial. Não deixe a ansiedade te impedir de alcançar tudo o que deseja na vida.</p>
+    </div>
+  </div>
+  <script>
+    function toggleHighlight(element) {
+      element.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
